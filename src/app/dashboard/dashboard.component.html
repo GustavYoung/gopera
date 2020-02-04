@@ -1,0 +1,11 @@
+<app-operativo-search></app-operativo-search>
+
+<h3>Ultimos Operativos</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let operativo of operativos" class="col-1-4"
+        routerLink="/detail/{{operativo.id}}">
+    <div class="module operativo">
+      <h4>{{operativo.name}}</h4>
+    </div>
+  </a>
+</div>

@@ -1,0 +1,20 @@
+<h2>Mis Operativos</h2>
+
+<div>
+  <label>Nuevo Operativo:
+    <input #operativoName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(operativoName.value); operativoName.value=''">
+    agregar
+  </button>
+</div>
+<ul class="operativos">
+  <li *ngFor="let operativo of operativos">
+  <a routerLink="/detail/{{operativo.id}}">
+    <span class="badge">{{operativo.id}}</span> {{operativo.name}}
+  </a>
+  <button class="delete" title="Eliminar Operativo"
+  (click)="delete(operativo)">x</button>
+  </li>
+</ul>
