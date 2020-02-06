@@ -1,19 +1,36 @@
 <div *ngIf="operativo">
 
-    <h2>Detalles del operativo en {{operativo.name | uppercase}}</h2>
+    <h2>Detalles del operativo en {{operativo.name | uppercase}}, {{operativo.estado}}.</h2>
     <table>
-    <tr><div><span>Evento: </span>{{operativo.evento}}</div></tr>
-    <div><span>Estado: </span>{{operativo.estado}}</div>
-    <div><span>Responsable: </span>{{operativo.organismo}}</div>
-    <div><span>id: </span>{{operativo.id}}</div>
+    <tr>
+      <th><span>ID </span></th>
+      <th><span>Responsable </span></th>
+      <th><span>Estado </span></th>
+      <th><span>Municipio </span></th>
+      <th><span>Evento </span></th>
+    </tr>
+    <tr>
+      <td><div>{{operativo.id}}</div></td>
+      <td><div>{{operativo.organismo}}</div></td>
+      <td><div>{{operativo.estado}}</div></td>
+      <td><div>{{operativo.name}}</div></td>
+      <td><div>{{operativo.evento}}</div></td>
+    </tr>
     </table>
     <div>
       <label>Operativo:
-        <input [(ngModel)]="operativo.name" placeholder="name"/>
+        <input [(ngModel)]="operativo.name" placeholder="Operativo"/>
+      </label>
+    </div>
+    <div>
+      <label>Estado:
+        <input [(ngModel)]="operativo.estado" placeholder="estado"/>
       </label>
     </div>
     </div>
 <div>
-  <button (click)="save()">Guardar</button>
+    <button (click)="save()">Guardar</button>
     <button (click)="goBack()">Regresar...</button>
+    <button (click)="goBack()">Editar Operativo</button>
+    <button (click)="goBack()">Capturar avances</button>
 </div>

@@ -29,3 +29,19 @@ label {
     color: #ccc;
     cursor: auto;
   }
+  table {
+    border-spacing: 5px;
+  }
+  table, th, td {
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid #acacac;
+    padding: 15px;
+  }
+  th {
+    text-align: left;
+  }
+  tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
