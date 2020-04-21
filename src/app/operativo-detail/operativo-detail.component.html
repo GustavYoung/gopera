@@ -8,6 +8,10 @@
       <th><span>Estado </span></th>
       <th><span>Municipio </span></th>
       <th><span>Evento </span></th>
+      <th><span>Avance </span></th>
+      <th><span>Beneficiados </span></th>
+      <th><span>Equipo(s) </span></th>
+      <th><span>Personal </span></th>
     </tr>
     <tr>
       <td><div>{{operativo.id}}</div></td>
@@ -15,8 +19,22 @@
       <td><div>{{operativo.estado}}</div></td>
       <td><div>{{operativo.name}}</div></td>
       <td><div>{{operativo.evento}}</div></td>
+      <td><div>{{operativo.advance}}</div></td>
+      <td><div>{{operativo.benefit}}</div></td>
+      <td><div>{{operativo.equip}}</div></td>
+      <td><div>{{operativo.personal}}</div></td>
     </tr>
     </table>
+    <div>
+      <label>Avance:
+        <input [(ngModel)]="operativo.advance" placeholder="avance del op."/>
+      </label>
+    </div>
+    <div>
+      <label>Beneficiados:
+        <input [(ngModel)]="operativo.benefit" placeholder="Beneficiados del op. por habitante"/>
+      </label>
+    </div>
     <div>
       <label>Operativo:
         <input [(ngModel)]="operativo.name" placeholder="Operativo"/>
