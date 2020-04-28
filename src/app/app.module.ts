@@ -17,6 +17,7 @@ import { OperativoSearchComponent } from './operativo-search/operativo-search.co
 import { ResponsablesComponent } from './responsables/responsables.component';
 import { ResponsableDetailComponent } from './responsable-detail/responsable-detail.component';
 import { ChartsComponent } from './charts/charts.component';
+import { RepdirariosComponent } from './repdirarios/repdirarios.component';
 
 @NgModule({
   
@@ -29,7 +30,8 @@ import { ChartsComponent } from './charts/charts.component';
     OperativoSearchComponent,
     ResponsablesComponent,
     ResponsableDetailComponent,
-    ChartsComponent
+    ChartsComponent,
+    RepdirariosComponent
   ],
   imports: [
     BrowserModule,

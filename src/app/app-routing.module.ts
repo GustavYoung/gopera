@@ -6,6 +6,7 @@ import { OperativoDetailComponent } from './operativo-detail/operativo-detail.co
 import { ResponsableDetailComponent } from "./responsable-detail/responsable-detail.component";
 import { ResponsablesComponent } from './responsables/responsables.component';
 import { ChartsComponent } from './charts/charts.component';
+import { RepdirariosComponent } from './repdirarios/repdirarios.component';
 
 
 
@@ -16,7 +17,8 @@ const routes: Routes = [
   { path: 'detail/:id', component: OperativoDetailComponent },
   { path: 'responsable/:id', component: ResponsableDetailComponent },
   { path: 'responsables', component: ResponsablesComponent },
-  { path: 'graficas', component: ChartsComponent }
+  { path: 'graficas', component: ChartsComponent },
+  { path: 'reportdiar', component: RepdirariosComponent}
 ];
 
 @NgModule({

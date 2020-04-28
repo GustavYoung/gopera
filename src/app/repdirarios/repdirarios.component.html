@@ -1,0 +1,31 @@
+<h2>Avance Diario</h2>
+
+
+<ul class="operativos">
+
+  <table>
+    <tr>
+      <th><span>ID </span></th>
+      <th><span>Estado </span></th>
+      <th><span>Municipio </span></th>
+      <th><span>Evento </span></th>
+      <th><span>Avance </span></th>
+      <th><span>Beneficiados </span></th>
+      <th><span>Equipo(s) </span></th>
+      <th><span>Personal </span></th>
+    </tr>
+    <tr *ngFor="let operativo of operativos">
+    
+      <td><div>{{operativo.id}}</div></td>
+      <td><div>{{operativo.estado}}</div></td>
+      <td><div>{{operativo.name}}</div></td>
+      <td><div>{{operativo.evento}}</div></td>
+      <td><div>{{operativo.advance}}</div></td>
+      <td><div>{{operativo.benefit}}</div></td>
+      <td><div>{{operativo.equip}}</div></td>
+      <td><div>{{operativo.personal}}</div></td>
+    
+    </tr>
+    </table>
+
+</ul>
