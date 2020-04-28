@@ -11,6 +11,9 @@ import { SvcoperativoService } from '../svcoperativo.service';
 })
 export class OperativoDetailComponent implements OnInit {
 
+  public show:boolean = false;
+  public buttonEdit:any = 'Show';
+
   @Input() operativo: Operativo;
 
   constructor(
@@ -33,6 +36,15 @@ export class OperativoDetailComponent implements OnInit {
   save(): void {
     this.svcoperativoService.updateOperativo(this.operativo)
       .subscribe(() => this.goBack());
+  }
+  toggle() {
+    this.show = !this.show;
+
+    // CHANGE THE NAME OF THE BUTTON.
+    if(this.show)  
+      this.buttonEdit = "Hide";
+    else
+      this.buttonEdit = "Show";
   }
 
 }

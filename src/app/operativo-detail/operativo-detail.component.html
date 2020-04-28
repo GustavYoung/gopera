@@ -4,7 +4,6 @@
     <table>
     <tr>
       <th><span>ID </span></th>
-      <th><span>Responsable </span></th>
       <th><span>Estado </span></th>
       <th><span>Municipio </span></th>
       <th><span>Evento </span></th>
@@ -15,7 +14,6 @@
     </tr>
     <tr>
       <td><div>{{operativo.id}}</div></td>
-      <td><div>{{operativo.organismo}}</div></td>
       <td><div>{{operativo.estado}}</div></td>
       <td><div>{{operativo.name}}</div></td>
       <td><div>{{operativo.evento}}</div></td>
@@ -25,6 +23,7 @@
       <td><div>{{operativo.personal}}</div></td>
     </tr>
     </table>
+    <ng-container *ngIf="show">
     <div>
       <label>Avance:
         <input [(ngModel)]="operativo.advance" placeholder="avance del op."/>
@@ -36,7 +35,7 @@
       </label>
     </div>
     <div>
-      <label>Operativo:
+      <label>Municipio:
         <input [(ngModel)]="operativo.name" placeholder="Operativo"/>
       </label>
     </div>
@@ -45,10 +44,23 @@
         <input [(ngModel)]="operativo.estado" placeholder="estado"/>
       </label>
     </div>
+    <div>
+      <label>Equipo:
+        <input [(ngModel)]="operativo.equip" placeholder="equipo"/>
+      </label>
     </div>
+    <div>
+      <label>Personal:
+        <input [(ngModel)]="operativo.personal" placeholder="Personal"/>
+      </label>
+    </div>
+    </ng-container>
+  </div>
+
 <div>
+  <ng-container *ngIf="show">
     <button (click)="save()">Guardar</button>
+  </ng-container>
+    <button (click)="toggle()">Editar Operativo</button>
     <button (click)="goBack()">Regresar...</button>
-    <button (click)="goBack()">Editar Operativo</button>
-    <button (click)="goBack()">Capturar avances</button>
 </div>
