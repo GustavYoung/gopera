@@ -1,0 +1,26 @@
+<div *ngIf="responsable">
+
+    <h2>Responsable {{responsable.name | uppercase}}, {{responsable.organismo_dl}}.</h2>
+    <table>
+        <tr>
+          <th><span>Responsable </span></th>
+          <th><span>Organismo de Cuenca o DL </span></th>
+          <th><span>Jefe de Brigada </span></th>
+          <th><span>Jefe de CRAE </span></th>
+        </tr>
+        <tr>
+          <td><div>{{responsable.name}}</div></td>
+          <td><div>{{responsable.organismo_dl}}</div></td>
+          <td><div>{{responsable.jefebriga}}</div></td>
+          <td><div>{{responsable.jefecrae}}</div></td>
+        </tr>
+        </table>
+        </div>
+<app-operativos></app-operativos>
+
+<div>
+    <button (click)="save()">Guardar</button>
+    <button (click)="goBack()">Regresar...</button>
+    <button (click)="goBack()">Editar Operativo</button>
+    <button (click)="goBack()">Capturar avances</button>
+</div>

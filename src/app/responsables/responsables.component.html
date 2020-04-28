@@ -1,0 +1,20 @@
+<h2>Responsables.</h2>
+
+<div>
+  <label>Nuevo:
+    <input #responsableName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(responsableName.value); responsableName.value=''">
+    agregar
+  </button>
+</div>
+<ul class="responsables">
+  <li *ngFor="let responsable of responsables">
+  <a routerLink="/responsable/{{responsable.id}}">
+    <span class="badge">{{responsable.id}}</span> {{responsable.name}}
+  </a>
+  <button class="delete" title="Eliminar"
+  (click)="delete(responsable)">x</button>
+  </li>
+</ul>

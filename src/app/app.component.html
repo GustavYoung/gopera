@@ -1,6 +1,7 @@
 <div><img src="../assets/logo_cna.png" alt="HTML5 Icon" style="height:66px;"></div> <h1>{{title}}</h1>
 <nav>
     <a routerLink="/dashboard">Inicio</a>
+    <a [routerLink]="['/responsables']" routerLinkActive="router-link-active">Responsables</a>
     <a [routerLink]="['/operativos']" routerLinkActive="router-link-active">Operativos</a>
     <a [routerLink]="['/routePath']" routerLinkActive="router-link-active">Graficas</a>
     <a [routerLink]="['/routePath']" routerLinkActive="router-link-active">Reportes diarios</a>

@@ -13,6 +13,8 @@ import { OperativoDetailComponent } from './operativo-detail/operativo-detail.co
 import { MessagesComponent } from './messages/messages.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OperativoSearchComponent } from './operativo-search/operativo-search.component';
+import { ResponsablesComponent } from './responsables/responsables.component';
+import { ResponsableDetailComponent } from './responsable-detail/responsable-detail.component';
 
 @NgModule({
   
@@ -22,7 +24,9 @@ import { OperativoSearchComponent } from './operativo-search/operativo-search.co
     OperativoDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    OperativoSearchComponent
+    OperativoSearchComponent,
+    ResponsablesComponent,
+    ResponsableDetailComponent
   ],
   imports: [
     BrowserModule,

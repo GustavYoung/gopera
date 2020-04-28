@@ -9,7 +9,6 @@ import { SvcoperativoService } from '../svcoperativo.service';
   templateUrl: './operativo-detail.component.html',
   styleUrls: ['./operativo-detail.component.css']
 })
-
 export class OperativoDetailComponent implements OnInit {
 
   @Input() operativo: Operativo;
