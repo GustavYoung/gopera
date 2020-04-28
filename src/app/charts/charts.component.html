@@ -1,0 +1,12 @@
+
+<h4 style="text-align:left">Grafica estado de operativos.
+</h4>
+
+<div style="width: 50%">
+<canvas baseChart
+        [data]="pieChartData"
+        [labels]="pieChartLabels"
+        [chartType]="pieChartType"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"></canvas>
+</div>

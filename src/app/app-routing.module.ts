@@ -5,6 +5,7 @@ import { DashboardComponent }   from './dashboard/dashboard.component';
 import { OperativoDetailComponent } from './operativo-detail/operativo-detail.component';
 import { ResponsableDetailComponent } from "./responsable-detail/responsable-detail.component";
 import { ResponsablesComponent } from './responsables/responsables.component';
+import { ChartsComponent } from './charts/charts.component';
 
 
 
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: OperativoDetailComponent },
   { path: 'responsable/:id', component: ResponsableDetailComponent },
-  { path: 'responsables', component: ResponsablesComponent }
+  { path: 'responsables', component: ResponsablesComponent },
+  { path: 'graficas', component: ChartsComponent }
 ];
 
 @NgModule({

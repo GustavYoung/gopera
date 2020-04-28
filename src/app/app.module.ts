@@ -5,6 +5,7 @@ import { HttpClientModule }    from '@angular/common/http';
 
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
+import { ChartsModule } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +16,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { OperativoSearchComponent } from './operativo-search/operativo-search.component';
 import { ResponsablesComponent } from './responsables/responsables.component';
 import { ResponsableDetailComponent } from './responsable-detail/responsable-detail.component';
+import { ChartsComponent } from './charts/charts.component';
 
 @NgModule({
   
@@ -26,7 +28,8 @@ import { ResponsableDetailComponent } from './responsable-detail/responsable-det
     DashboardComponent,
     OperativoSearchComponent,
     ResponsablesComponent,
-    ResponsableDetailComponent
+    ResponsableDetailComponent,
+    ChartsComponent
   ],
   imports: [
     BrowserModule,
@@ -34,6 +37,7 @@ import { ResponsableDetailComponent } from './responsable-detail/responsable-det
     HttpClientModule,
     AppRoutingModule,
     HttpClientModule,
+    ChartsModule,
     // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
     // and returns simulated server responses.
     // Remove it when a real server is ready to receive requests.
