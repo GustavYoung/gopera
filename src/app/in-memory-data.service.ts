@@ -104,7 +104,7 @@ export class InMemoryDataService {
     ];
 
     let responsables = [
-      { id: 1, name: 'CRAE 01 Vaso de Cristo ', organismo_dl: 'Gerencia de PIAE', jefebriga: 'Castillo Neri', jefecrae:'C. Facundo Gómez Muciño', teljb:'', teljc:'' },
+      { id: 1, name: 'CRAE 01 Vaso de Cristo ', organismo_dl: 'Gerencia de PIAE', jefebriga: 'N/D', jefecrae:'C. Facundo Gómez Muciño', teljb:'', teljc:'' },
       { id: 2, name: 'CRAE 02 Guadalajara, Jal.', organismo_dl: 'OC Lerma Santiago Pacífico', jefebriga: 'Tec. Oscar Coyt Nuño', jefecrae:'C. Cristina Isabel Sánchez Gutiérrez', teljb:'', teljc:'' },
       { id: 3, name: 'CRAE 03 Altamira., Tamps.', organismo_dl: 'OC Golfo Norte', jefebriga: 'Ing. Pablo Mota Montes', jefecrae:'C. Rubén García Delgado', teljb:'', teljc:'' },
       { id: 4, name: 'CRAE 04 Chilpancingo, Gro.', organismo_dl: 'Dirección Local Guerrero', jefebriga: 'C. Ernesto Barragán Solano', jefecrae:'C. Guillermo Melo Ortega', teljb:'', teljc:'' },
