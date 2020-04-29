@@ -16,13 +16,14 @@
       <th><span>Evento </span></th>
       <th><span>PDF </span></th>
     </tr>
-    <tr *ngFor="let operativo of operativos">
+    <tr>
     
-      <td><div>{{operativo.id}}</div></td>
-      <td><div>{{operativo.estado}}</div></td>
-      <td><div>{{operativo.name}}</div></td>
-      <td><div>{{operativo.evento}}</div></td>
-      <td><div><button (click)="toggle()">Descargar</button></div></td>
+      <td><div>56</div></td>
+      <td><div>Hidalgo</div></td>
+      <td><div>Tolcayuca</div></td>
+      <td><div>Suministro de Agua</div></td>
+      <td><div><button (click)="openDoc('../assets/Informe_Final_Operativo_Tolcayuca_2020.pdf','Autorizacion')">Ver</button>
+        <button (click)="downloadPdf('../assets/Informe_Final_Operativo_Tolcayuca_2020.pdf','Autorizacion')">Descargar</button></div></td>
     
     </tr>
     </table>

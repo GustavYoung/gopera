@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Operativo } from '../operativo';
 import { SvcoperativoService } from '../svcoperativo.service'
 
+declare var require: any
+const FileSaver = require('file-saver');
+
 @Component({
   selector: 'app-repsfinales',
   templateUrl: './repsfinales.component.html',
@@ -16,6 +19,16 @@ export class RepsfinalesComponent implements OnInit {
 
   ngOnInit() {
     this.getOperativos();
+  }
+
+  downloadPdf(pdfUrl: string, pdfName: string ) {
+    //const pdfUrl = './assets/sample.pdf'; esto comentado es para hacerlo dinamico
+    //const pdfName = 'your_pdf_file';
+    FileSaver.saveAs(pdfUrl, pdfName);
+  }
+
+  openDoc(pdfUrl: string ) {
+    window.open(pdfUrl, '_blank', '', true);
   }
 
   delete(operativo: Operativo): void {
