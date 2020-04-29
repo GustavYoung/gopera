@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChartsComponent {
   // Pie
-  public pieChartLabels:string[] = ['Opertavivos activos', 'Op. Finalizados', 'Op. Suspendidos'];
+  public pieChartLabels:string[] = ['Operativos activos', 'Op. Finalizados', 'Op. Suspendidos'];
   public pieChartData:number[] = [70, 25, 5];
   public pieChartType:string = 'pie';
  
