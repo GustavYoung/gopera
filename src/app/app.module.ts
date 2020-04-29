@@ -18,6 +18,7 @@ import { ResponsablesComponent } from './responsables/responsables.component';
 import { ResponsableDetailComponent } from './responsable-detail/responsable-detail.component';
 import { ChartsComponent } from './charts/charts.component';
 import { RepdirariosComponent } from './repdirarios/repdirarios.component';
+import { RepsfinalesComponent } from './repsfinales/repsfinales.component';
 
 @NgModule({
   
@@ -31,7 +32,8 @@ import { RepdirariosComponent } from './repdirarios/repdirarios.component';
     ResponsablesComponent,
     ResponsableDetailComponent,
     ChartsComponent,
-    RepdirariosComponent
+    RepdirariosComponent,
+    RepsfinalesComponent
   ],
   imports: [
     BrowserModule,

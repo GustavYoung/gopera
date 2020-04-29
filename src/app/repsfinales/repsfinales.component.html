@@ -1,0 +1,31 @@
+<h2>Reportes Finales</h2>
+
+
+<ul class="operativos">
+  <div>
+
+  </div>
+
+
+  <div>
+  <table>
+    <tr>
+      <th><span>ID </span></th>
+      <th><span>Estado </span></th>
+      <th><span>Municipio </span></th>
+      <th><span>Evento </span></th>
+      <th><span>PDF </span></th>
+    </tr>
+    <tr *ngFor="let operativo of operativos">
+    
+      <td><div>{{operativo.id}}</div></td>
+      <td><div>{{operativo.estado}}</div></td>
+      <td><div>{{operativo.name}}</div></td>
+      <td><div>{{operativo.evento}}</div></td>
+      <td><div><button (click)="toggle()">Descargar</button></div></td>
+    
+    </tr>
+    </table>
+  </div>
+
+</ul>
