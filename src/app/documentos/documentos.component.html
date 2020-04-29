@@ -1,0 +1,36 @@
+<h2>Documentos</h2>
+
+
+<ul class="operativos">
+
+  <div>
+  <table>
+    <tr>
+      <th><span>ID </span></th>
+      <th><span>Estado </span></th>
+      <th><span>Municipio </span></th>
+      <th><span>Evento </span></th>
+      <th><span>Solicitud de Organismo <br /> o Gobierno Estatal</span></th>
+      <th><span>Diagnostico <br /> y dictamen</span></th>
+      <th><span>Solicitud dirigida <br /> al Gerente de PIAE</span></th>
+      <th><span>Autorizacion del <br /> Gerente de PIAE</span></th>
+    </tr>
+    <tr *ngFor="let operativo of operativos">
+    
+      <td><div>{{operativo.id}}</div></td>
+      <td><div>{{operativo.estado}}</div></td>
+      <td><div>{{operativo.name}}</div></td>
+      <td><div>{{operativo.evento}}</div></td>
+      <td><div><button (click)="openDoc('../assets/sol_a_1101_231.pdf','solicitud_org')">Ver</button>
+        <button (click)="downloadPdf('../assets/sol_a_1101_231.pdf','solicitud_org')">Descargar</button></div></td>
+      <td><div><button (click)="openDoc('../assets/dictamen_1101_231.pdf','diag_dictamen')">Ver</button>
+        <button (click)="downloadPdf('../assets/dictamen_1101_231.pdf','diag_dictamen')">Descargar</button></div></td>
+      <td><div><button (click)="openDoc('../assets/sol_b_1101_231.pdf','solicitud_PIAE')">Ver</button>
+        <button (click)="downloadPdf('../assets/sol_b_1101_231.pdf','solicitud_PIAE')">Descargar</button></div></td>
+      <td><div><button (click)="openDoc('../assets/aut_1101_231.pdf','Autorizacion')">Ver</button>
+        <button (click)="downloadPdf('../assets/aut_1101_231.pdf','Autorizacion')">Descargar</button></div></td>
+    </tr>
+    </table>
+  </div>
+
+</ul>

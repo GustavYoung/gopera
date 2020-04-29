@@ -20,9 +20,9 @@ export class InMemoryDataService {
        equip: '1 bomba de 20" ',
        personal: '2 elementos'
       },
-      { id: 12, name: 'Miguel Hidalgo', 
+      { id: 12, name: 'Cuatro Cienegas', 
       evento: 'Reparto de agua',
-      estado: 'Tamaulipas', 
+      estado: 'Coahuila', 
       organismo: 'Organismo de Cuenca Rio Bravo',
       advance: '113,000 Lts',
       benefit: '1,900 habitantes',

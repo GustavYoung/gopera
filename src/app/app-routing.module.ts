@@ -7,7 +7,8 @@ import { ResponsableDetailComponent } from "./responsable-detail/responsable-det
 import { ResponsablesComponent } from './responsables/responsables.component';
 import { ChartsComponent } from './charts/charts.component';
 import { RepdirariosComponent } from './repdirarios/repdirarios.component';
-import { RepsfinalesComponent } from './repsfinales/repsfinales.component'
+import { RepsfinalesComponent } from './repsfinales/repsfinales.component';
+import { DocumentosComponent } from './documentos/documentos.component'
 
 
 
@@ -20,7 +21,8 @@ const routes: Routes = [
   { path: 'responsables', component: ResponsablesComponent },
   { path: 'graficas', component: ChartsComponent },
   { path: 'reportdiar', component: RepdirariosComponent},
-  { path: 'reposfinales', component: RepsfinalesComponent}
+  { path: 'reposfinales', component: RepsfinalesComponent},
+  { path: 'documentacion', component: DocumentosComponent}
 ];
 
 @NgModule({
